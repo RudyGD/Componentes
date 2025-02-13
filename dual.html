@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <script src="js/base.js"></script>
+</head>
+
+<body>
+
+    <section class="section section--s section--primary">
+        <div class="container font--center">
+            <h1 class="title title--1 font--invert">Dual</h1>
+            <select id="producto">
+                <option value="0">Default</option>
+                <option value="1">Texto con padding vertical</option>
+                <option value="2">Imagen full width</option>
+                <option value="3">Banda doble [img rigth]</option>
+                <option value="4">Cols con dos bloques de texto</option>
+                <option value="5">Caja contacto más mapa</option>
+                <option value="6">Mini video [cover] + texto</option>
+                <option value="7">Mini video [contain] + texto</option>
+                <option value="8">Diferente tamaño de columnas</option>
+                <option value="9">Imagen por encima</option>
+                <option value="10">Texto por encima</option>
+                <option value="11">Texto en caja</option>
+                <option value="12">Dual en caja con radius</option>
+            </select>
+        </div>
+    </section>
+
+
+
+    <section class="section section--gap-v" id="Default">
+
+        <div class="dual">
+            <div data-order-mv="1" class="dual__item dual__item--img-crop">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--center">
+                <div class="dual__inner">
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis. Quisque vel eleifend leo. Morbi pulvinar
+                        massa in tellus vehicula egestas.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <div class="blockquote">
+                        Nam ac arcu rhoncus ligula ornare lobortis at id lorem. Nullam mauris lorem, suscipit ut velit
+                        in, mollis maximus odio. Sed auctor, ipsum ac tincidunt maximus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section--gap-v" id="Texto con padding vertical">
+
+        <div class="dual">
+
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--gap-v">
+                <div class="dual__inner">
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis. Quisque vel eleifend leo. Morbi pulvinar
+                        massa in tellus vehicula egestas.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <div class="blockquote">
+                        Nam ac arcu rhoncus ligula ornare lobortis at id lorem. Nullam mauris lorem, suscipit ut velit
+                        in, mollis maximus odio. Sed auctor, ipsum ac tincidunt maximus.
+                    </div>
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--img-crop">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Imagen full width">
+        <div class="dual">
+
+            <div data-order-mv="1" class="dual__item dual__item--img-crop dual__item--full">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--gap-v dual__item--center">
+                <div class="dual__inner">
+                    <h2 class="title title--2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--secondary section--nogap" id="Banda doble [img rigth]">
+        <div class="dual">
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--gap-v dual__item--center">
+                <div class="dual__inner">
+                    <h2 class="title title--2">
+                        aLorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--img-crop dual__item--full">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Cols con dos bloques de texto">
+        <div class="dual">
+            <div data-order-mv="2" class="dual__item dual__item--txt">
+                <div class="dual__inner">
+                    <p><img loading="lazy" src="https://picsum.photos/600/200" style="object-position:50% 50%"
+                            class="img-cover" alt=""></p>
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis. Quisque vel eleifend leo. Morbi pulvinar
+                        massa in tellus vehicula egestas.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <div class="blockquote">
+                        Nam ac arcu rhoncus ligula ornare lobortis at id lorem. Nullam mauris lorem, suscipit ut velit
+                        in, mollis maximus odio. Sed auctor, ipsum ac tincidunt maximus.
+                    </div>
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--txt">
+                <div class="dual__inner">
+                    <p><img loading="lazy" src="https://picsum.photos/600/200" style="object-position:50% 50%"
+                            class="img-cover" alt=""></p>
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis. Quisque vel eleifend leo. Morbi pulvinar
+                        massa in tellus vehicula egestas.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <div class="blockquote">
+                        Nam ac arcu rhoncus ligula ornare lobortis at id lorem. Nullam mauris lorem, suscipit ut velit
+                        in, mollis maximus odio. Sed auctor, ipsum ac tincidunt maximus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="Caja contacto más mapa">
+        <div class="dual">
+            <div data-order-mv="1" class="dual__item dual__item--txt dual__item--box">
+                <div class="dual__inner">
+                    <h3 class="title title--2 font--secondary">
+                        Contacta con nosotros
+                    </h3>
+                    <p>Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis. Quisque vel eleifend leo. Morbi pulvinar
+                        massa in tellus vehicula egestas.</p>
+                    <ul class="list-points">
+                        <li class="direccion"><strong>Direcci�n:</strong> ##direccion##
+                        </li>
+                        <li class="principal">
+                            <strong>Tel�fonos:</strong> <a title="Llamar a ##nombre-empresa##"
+                                href="tel:##telefono##">##telefono##</a> / <a
+                                href="https://api.whatsapp.com/send?phone=34##movil##"
+                                class="button button--s button--ico button--whatsapp" target="_blank" rel="noopener"
+                                title="Enviar whatsapp a ##nombre-empresa##"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                        <li class="mail">
+                            <strong>E-mail:</strong> <span id="email_formulario" class="block">##mail##</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-order-mv="2" class="dual__item dual__item--mapa dual__item--full">
+                <div class="dual__inner">
+                    <iframe src="https://www.google.com/maps?q=43.28159499,-8.21362138&amp;output=embed" width="100%"
+                        height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    <script type="text/plain" data-tpc="true" data-id="google-maps">
+                        <iframe src="https://www.google.com/maps?q=43.28159499,-8.21362138&amp;output=embed" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </script>
+                    <script type="tex/plain" data-tpc="rpl">
+                        <span><i class="fas fa-exclamation-circle"></i> Debes permitir las cookies para ver este contenido</span>
+                        </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Mini video [cover] + texto">
+
+        <div class="dual">
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--center">
+                <div class="dual__inner">
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis. Quisque vel eleifend leo. Morbi pulvinar
+                        massa in tellus vehicula egestas.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Nam ac arcu rhoncus ligula ornare lobortis at id lorem. Nullam mauris lorem, suscipit ut velit
+                        in, mollis maximus odio. Sed auctor, ipsum ac tincidunt maximus.
+                    </p>
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--video">
+                <div class="dual__inner">
+                    <div class="minivideo minivideo--full">
+                        <div class="minivideo__inner">
+                            <video playsinline="" autoplay="" loop="" muted="" class="img-cover">
+                                <source src="/video/video.mp4" type="video/mp4">
+                                Tu navegador no admite la reproducci�n de v�deos.
+                            </video>
+                            <i class="play fas fa-play-circle"></i>
+                        </div>
+                        <div class="minivideo__iframe minivideo__hide">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube-nocookie.com/embed/OadBcSogqVo?rel=0&amp;loop=1&amp;playlist=OadBcSogqVo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Mini video [contain] + texto">
+
+        <div class="dual">
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--center">
+                <div class="dual__inner">
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--video dual__item--center">
+                <div class="dual__inner">
+                    <div class="minivideo">
+                        <div class="minivideo__inner">
+                            <video playsinline="" autoplay="" loop="" muted="" class="img-cover">
+                                <source src="/video/video.mp4" type="video/mp4">
+                                Tu navegador no admite la reproducci�n de v�deos.
+                            </video>
+                            <i class="play fas fa-play-circle"></i>
+                        </div>
+                        <div class="minivideo__iframe minivideo__hide">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube-nocookie.com/embed/OadBcSogqVo?rel=0&amp;loop=1&amp;playlist=OadBcSogqVo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Diferente tamaño de columnas">
+        <div class="dual">
+            <div data-order-mv="2" class="dual__item dual__item--img" style="--dualwidth:0.4;">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/480" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--txt dual__item--center" style="--dualwidth:0.6;">
+                <div class="dual__inner">
+                    <h2 class="title title--1 font--primary">Nam non facilisis velit</h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Imagen por encima">
+        <div class="dual dual--imgOver">
+            <div data-order-mv="2" class="dual__item dual__item--img-crop" style="--dualwidth:0.4;">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--txt " style="--dualwidth:0.6;">
+                <div class="dual__inner">
+                    <h2 class="title title--1 font--primary">Nam non facilisis velit</h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section--gap-v" id="Texto por encima">
+        <div class="dual dual--txtOver">
+            <div data-order-mv="1" class="dual__item dual__item--txt" style="--dualwidth:0.6;">
+                <div class="dual__inner">
+                    <h2 class="title title--1 font--primary">Nam non facilisis velit</h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+            <div data-order-mv="2" class="dual__item dual__item--img-crop" style="--dualwidth:0.4;">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/480" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section section--gap-v" id="Texto en caja">
+        <div class="dual">
+            <div data-order-mv="2" class="dual__item dual__item--txt dual__item--box">
+                <div class="dual__inner">
+                    <h2 class="title title--2 font--primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h2>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                    <p>
+                        Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque vitae
+                        turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad litora torquent
+                        per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor, vitae condimentum eros.
+                        Curabitur efficitur a nulla id vestibulum. Sed id turpis pharetra, sagittis leo in, porta eros.
+                    </p>
+                    <p>
+                        Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan ultrices,
+                        nisl nunc gravida purus, a commodo eros orci id turpis.
+                    </p>
+                </div>
+            </div>
+            <div data-order-mv="1" class="dual__item dual__item--img-crop">
+                <div class="dual__inner">
+                    <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                        class="img-cover" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="Dual en caja con radius">
+        <div class="container">
+            <div class="section section--nogap">
+                <div class="dual dual--radius">
+
+                    <div data-order-mv="2" class="dual__item dual__item--txt dual__item--center dual__item--gap-v">
+                        <div class="dual__inner">
+                            <h2 class="title title--1">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit
+                            </h2>
+                            <p>
+                                Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan
+                                ultrices, nisl nunc gravida purus, a commodo eros orci id turpis.
+                            </p>
+                            <p>
+                                Quisque vel eleifend leo. Morbi pulvinar massa in tellus vehicula egestas.Pellentesque
+                                vitae turpis orci. Vestibulum sit amet tellus turpis. Class aptent taciti sociosqu ad
+                                litora torquent per conubia nostra, per inceptos himenaeos. Nullam vel dignissim tortor,
+                                vitae condimentum eros. Curabitur efficitur a nulla id vestibulum. Sed id turpis
+                                pharetra, sagittis leo in, porta eros.
+                            </p>
+                            <p>
+                                Nam non facilisis velit, sed condimentum lectus. Sed sagittis, diam varius accumsan
+                                ultrices, nisl nunc gravida purus, a commodo eros orci id turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div data-order-mv="1" class="dual__item dual__item--full dual__item--img dual__item--img-crop">
+                        <div class="dual__inner">
+                            <img loading="lazy" src="https://picsum.photos/600/600" style="object-position:50% 50%"
+                                class="img-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
