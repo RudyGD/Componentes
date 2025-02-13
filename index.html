@@ -5,22 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compoentes</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/fontawesome.css">
 </head>
 
 <body>
-    <section class="section section--s section--primary ">
-        <div class="container font--center">
-            <h1 class="title title--1 font--invert">Componentes</h1>
+    
+
+    <header class="header header--sticky">
+        <div class="header__main">
+            <div class="hamburger" tabindex="0">
+                <div class="bar top"></div>
+                <div class="bar middle"></div>
+                <div class="bar bottom"></div>
+            </div>
+            <div class="header__logo">
+                <a class="header__logo-link" href="/index.html" title="Pijemo"><img class="header__logo-img" src="/images/logo.png" alt="Pijemo"></a>
+            </div>
+    
+            <nav class="nav nav--top">
+                <div class="nav__head">
+                    <div class="nav__logo">
+                        <img src="/images/logo.svg" alt="Pijemo">
+                    </div>
+                    <div class="nav__close" tabindex="0">
+                        Cerrar <i class="fa-regular fa-xmark"></i>
+                    </div>
+                </div>
+                <ul class="nav__list container">
+                    <li class="nav__item nav__item--selected"><a class="nav__link" href="/index.html"><span class="nav__txt">Inicio</span></a></li>                    
+                    <li class="nav__item"><a class="nav__link" href="/dual.html" data-applied="true"><span class="nav__txt">Dual</span></a></li>
+                    <li class="nav__item"><a class="nav__link" href="/box.html"><span class="nav__txt">Box</span></a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <section class="portada portada--main">	
+        <div class="portada__img">
+            <picture>
+                <source media="(min-width: 601px)" srcset="/images/portada.jpg">
+                <img src="/images/portada.jpg" class="img-cover" alt="">
+            </picture>
+        </div>
+        <div class="portada__info">
+            <div>
+                <h1 class="title portada__title">Componentes</h1>                
+            </div>
         </div>
     </section>
 
 
+    
+
     <section class="section">
-        <div class="container">
-            <h2 class="title title--1 font--center font--secondary">Menú</h2>
+        <div class="container">            
             <div class="grid-auto" style="--mobile: 1; --tablet: 2; --pc: 4">
                 <div>
                     <a href="/dual.html" title="Ver componente Dual" class="icon-txt icon-txt--box">

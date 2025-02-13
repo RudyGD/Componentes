@@ -532,38 +532,35 @@ p:last-child {
     margin-bottom: 0;
 }
 
+
+
 .blockquote {
-    background:var(--primary);
-    color:var(--primary-invert);
+    color:var(--primary);
     font-weight:var(--bold1);
     font-style:italic;
     margin: 0 0 1.25rem;
     display:flex;
-    padding: var(--padding-inner);
-
 }
 
 .blockquote .title {
-    margin:0 0 0.5rem;
-    color:var(--primary-invert);
+margin:0 0 0.5rem;
 }
 .blockquote .title ~ p {
-    opacity:0.8;
+    color: var(--secondary);
 }
 
+.blockquote:before {
+    content: '';
+    width: 10%;
+    height: 1px;
+    background: var(--primary);
+    display: block;
+    margin-top: 10px;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
 .blockquote:last-child {
     margin-bottom: 0;
-}
-
-@media screen and (min-width: 1024px) {
-    .blockquote {
-     transform:translate(-15%,15%);
-    }
-}
-@media screen and (min-width: 1200px) {
-    .blockquote {
-     transform:translate(-25%,25%);
-    }
 }
 
 /*
